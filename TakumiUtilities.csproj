@@ -2,7 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TakumiUtilitiesTest\**" />
+    <EmbeddedResource Remove="TakumiUtilitiesTest\**" />
+    <None Remove="TakumiUtilitiesTest\**" />
+  </ItemGroup>
 
 </Project>
